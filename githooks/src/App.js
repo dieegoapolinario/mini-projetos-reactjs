@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import './app.css';
+
 function App() {
   const [repositories, setRepositories] = useState([]);
 
@@ -47,8 +49,8 @@ function App() {
         ))}
       </ul>
       <h2>Geo Location</h2>
-      Latitude: {location.latitude} <br/>
-      Longitude: {location.longitude}
+      <p>Latitude: {location.latitude}</p> <br/>
+      <p>Longitude: {location.longitude}</p>
     </>
   );
 }
